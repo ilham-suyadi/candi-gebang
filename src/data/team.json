@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name": "AMA GRETA RIFALDI",
+        "nim": 231110171,
+        "img":"/img/team-ama.jpg"
+    },
+    {
+        "id":2,
+        "name":"MUHAMAD SYAIFUL ANWAR",
+        "nim":231110046,
+        "img":"/img/team-ipul.jpg"
+    },
+    {
+        "id":3,
+        "name":"ILHAM SUYADI",
+        "nim":231110151,
+        "img":"/img/team-ilham.png"
+    },
+    {
+        "id":4,
+        "name":"YUSRON FATHUROHMAT FAUZI",
+        "nim":231120156,
+        "img":"/img/team-yusron.jpg"
+    },
+    {
+        "id":5,
+        "name":"ANDREAN TRI SAPUTRA",
+        "nim":231110051,
+        "img":"/img/team-andre.jpg"
+    },
+    {
+        "id":6,
+        "name":"AYUB ABDULLAH AZZAM",
+        "nim":231110024,
+        "img":"/img/team-ayub.jpg"
+    }
+]

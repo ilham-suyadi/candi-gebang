@@ -1,9 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
+import { LandingPage } from "./lib/api"
 
-export default function Home() {
+export default async function Home() {
+  const data = await LandingPage();
   return (
-    <div className="pt-36" id="home">
+    <div>
       <section>
         <div>
           <div className="flex flex-wrap">
@@ -12,10 +14,10 @@ export default function Home() {
                 <span className="block text-dark font-bold text-4xl mt-2 mb-1 lg:text-6xl">Candi Gebang</span>
               </h1>
               <h2 className="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">KSI | UMBY | WISATA</h2>
-              <p className="font-medium text-slate-400 mb-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, doloribus cumque. Id assumenda quos nulla quas quae maiores tempore molestiae sit, quod distinctio. Incidunt, ut reprehenderit accusamus quos tenetur in.</p>
+              <p className="font-medium text-slate-400 mb-10">{data.summary}</p>
             </div>
 
-            <div className="w-full self-end px-4 lg:w-1/2">
+            <div className="w-full flex justify-end self-end px-4 lg:w-1/2">
               <div className="mt-3">
                 <Image src={"/img/hero.png"} alt="Hero Section Image" width={450} height={450}/>
               </div>
@@ -75,7 +77,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <section id="team" className="pt-24">
+      {/* <section id="team" className="pt-24">
         <h1 className="font-bold text-lg text-center pb-5">Team</h1>
         <div className="py-8 px-4 mx-auto max-w-screen-xl first-letter:text-center lg:py-16 lg:px-6">
           <div className="grid gap-4 lg:gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
@@ -117,7 +119,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="pt-24 pb-5" id="maps">
         <h1 className="font-bold text-lg text-center pb-5">Maps</h1>
         <div className="border border-gray-200 p-2 rounded-3xl shadow-md">

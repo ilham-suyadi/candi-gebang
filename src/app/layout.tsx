@@ -17,11 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='container mx-auto'>
+      <body>
         <div className='flex flex-wrap'>
           <div className='w-full self-center px-4'>
             <Nav/>
-            <div>          
+            <div className='pt-24 container px-4 md:px-48 mx-auto'>          
               {children}
             </div>
           </div>
