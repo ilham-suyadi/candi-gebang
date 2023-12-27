@@ -29,8 +29,26 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+# Structure of the Application
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application is structured in such a way that it separates different types of files into their respective folders for efficient organization and easy access. Here's a breakdown of what each folder contains:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Data
+
+> /src/data
+
+This folder is designated for saving all data related to the application. It's a centralized place where all the data files are stored, to ensure a clean and organized workspace.
+
+All the data that has been collected is securely stored and preserved in a file format known as JSON, which stands for JavaScript Object Notation. This format is widely used for storing and exchanging data due to its simplicity and accessibility.
+
+## Image
+
+> /public/img
+
+The 'img' folder, located within the 'public' directory, is where all image files are saved. This makes it easy to locate and manage all images used within the application.
+
+## Source Code
+
+> src\app
+
+The 'app' folder, located within the 'src' directory, is dedicated to storing all the source code files. This includes all the scripts and code snippets that make up the application. It serves as the heart of the application where the main functionalities are implemented.
