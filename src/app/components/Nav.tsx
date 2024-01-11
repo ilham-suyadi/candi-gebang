@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
             <nav id="navMenu" className={`${isNavMenuOpen ? 'block' : 'hidden'} absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none`}>              
             <ul className="block lg:flex">
               {NavItem("/","Home")}
-              {NavItem("#blog","blog")}
+              {NavItem("/blog","blog")}
               {NavItem("/team","team")}
               <li className='group'>
                 <p onClick={toggleDropdwon} className={`cursor-pointer text-base mx-8 flex py-2 text-dark group-hover:text-primary ${pathname.includes("/info/") ? "text-primary": ""} `} aria-expanded={dropdown} data-dropdown-toggle="dropdown-user">Info <span className='mt-1.5'><FaCaretDown/></span></p>

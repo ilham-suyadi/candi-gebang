@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Candi Gebang: Jejak Peradaban Hindu Buddha di Sleman",
+        "thumbnailUrl": "/img/02.jpg",
+        "description": "Ini dia informasi seputar Candi Gebang mulai dari lokasi, fasilitas, daya tarik, dan yang lainnya.",
+        "author": "Muhamad Syaiful Anwar",
+        "date": "Desember 12, 2023",
+        "datetime": "2020-12-12"
+    },
+    {
+        "id": 2,
+        "title": "Berajarak Tak Jauh dari Malioboro, Ini 4 Candi Estetik untuk Foto di Jogja",
+        "thumbnailUrl": "/img/03.jpg",
+        "description": "Jelajahi keajaiban kota Jogja dengan mengunjungi beberapa candi estetik yang tersembunyi dekat Malioboro. Dalam perjalanan ini, Anda akan menemukan keindahan visual dan nilai sejarah di setiap sudut candi, menciptakan momen yang sempurna untuk diabadikan dalam foto-foto indah Anda.",
+        "author": "Yusron Fathurohmat Fauzi",
+        "date": "Oktober 10, 2023",
+        "datetime": "2020-10-10"
+    },
+    {
+        "id": 3,
+        "title": "Pesona Candi Gebang, Situs Hindu Mungil di Sleman Bukti Peninggalan Dinasti Sanjaya",
+        "thumbnailUrl": "/img/04.jpg",
+        "description": "Jelajahi pesona Candi Gebang, sebuah situs Hindu yang memukau di Sleman, yang merupakan bukti sejarah gemilang Dinasti Sanjaya. Meskipun ukurannya yang kompak, Candi Gebang menawarkan keindahan luar biasa dengan arsitektur Hindu yang khas.",
+        "author": "Ilham Suyadi",
+        "date": "Agustus 25, 2023",
+        "datetime": "2023-25-08"
+    },
+    {
+        "id": 4,
+        "title": "Menguak Misteri Empat Candi yang Terpendam Ratusan Tahun di Sleman, Yogyakarta",
+        "thumbnailUrl": "/img/05.jpg",
+        "description": "Yogyakarta, selain dikenal dengan keindahan alamnya yang menawan, juga menyimpan beragam keajaiban sejarah yang tersembunyi di dalamnya.",
+        "author": "Andrean Tri Saputra",
+        "date": "Mar 16, 2023",
+        "datetime": "2020-03-16"
+    }
+]
