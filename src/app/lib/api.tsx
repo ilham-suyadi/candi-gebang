@@ -1,33 +1,46 @@
-import {promises as fs } from 'fs';
-const path = process.cwd()  + '/src/data'
+import path from "path";
+import fs from "fs/promises";
 
-async function readJsonFile(filePath:any) {
-    try {
-        const file = await fs.readFile(filePath, 'utf-8');
-        return JSON.parse(file);
-    } catch (error) {
-        console.error(`Error reading JSON file at ${filePath}:`, error);
-        throw error;
-    }
+const dataPath = path.join(process.cwd(), "src/data");
+
+async function readJsonFile(filePath: string) {
+  try {
+    const file = await fs.readFile(path.join(dataPath, filePath), "utf-8");
+    return JSON.parse(file);
+  } catch (error) {
+    console.error(`Error reading JSON file at ${filePath}:`, error);
+    throw error;
+  }
 }
 
-export async function Sejarah(){
-    return readJsonFile(`${path}/sejarah.json`)
+export async function Sejarah() {
+  return readJsonFile("sejarah.json");
 }
 
-export async function Team(){
-    return readJsonFile(`${path}/team.json`)
+export async function Team() {
+  return readJsonFile("team.json");
 }
 
 export async function LandingPage() {
-    return readJsonFile(`${path}/landing-page.json`)
+  return readJsonFile("landing-page.json");
 }
 
 export async function HargaTiket() {
-    return readJsonFile(`${path}/harga-tiket.json`)
+  return readJsonFile("harga-tiket.json");
 }
 
 export async function Keunikan() {
-    return readJsonFile(`${path}/keunikan.json`)
+  return readJsonFile("keunikan.json");
 }
 
+export async function Blog() {
+  return readJsonFile("blog.json");
+}
+
+export async function getBlogData(): Promise<Blog[]> {
+  return readJsonFile('blog.json');
+}
+
+// export async function Blog() {
+//   return import("../../data/blog.json").then((module) => module.default);
+// }
